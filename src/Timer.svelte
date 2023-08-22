@@ -13,7 +13,7 @@
         audioElement.play();
     });
 
-    const = iniciar = () => {
+    const iniciar = () => {
         corriendo = true;
         intervalo = setInterval(contar, 1000);
     }
@@ -30,6 +30,20 @@
     }
 
     const contar = () => {
-        if
-    }
+        if (segundos === 0) {
+            if (minutos === 0) {
+                detener();
+                alert('Tiempo de descanso');
+            } else {
+                minutos--;
+                segundos = 59;
+            }
+        } else {
+            segundos--;
+        }
+    };
 </script>
+
+<div class="text-center">
+    <h2>{minutos}:{segundos < 10 ? '0' + segundos : segundos}</h2>
+</div>
