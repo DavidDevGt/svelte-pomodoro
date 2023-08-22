@@ -46,4 +46,7 @@
 
 <div class="text-center">
     <h2>{minutos}:{segundos < 10 ? '0' + segundos : segundos}</h2>
+    <button class="btn btn-primary me-2" on:click={iniciar}>Iniciar</button>
+    <button class="btn btn-warning me-2" on:click={detener}>Detener</button>
+    <button class="btn btn-danger me-2" on:click={resetear}>Resetear</button>
 </div>
