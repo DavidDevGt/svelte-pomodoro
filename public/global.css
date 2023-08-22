@@ -8,7 +8,7 @@
 
 body {
 	background-color: #f4f4f4;
-	color: #333;
+	color: #f1f1f1;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1.text-center {
-	color: #555;
+	color: #ffffff;
 	font-size: 24px;
 	margin-bottom: 20px;
 }
@@ -80,3 +80,47 @@ button.btn:disabled {
 button.btn-primary.me-2, button.btn-warning.me-2 {
     margin-right: 10px;
 }
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover; /* Asegura que el GIF cubra todo el div */
+    background-position: center; /* Centra el GIF en el div */
+    background-repeat: no-repeat; /* Evita que el GIF se repita */
+}
+
+main {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+/* Estilos específicos para el reproductor de música */
+.card.glassmorphism {
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+audio {
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+audio:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
